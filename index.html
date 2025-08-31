@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSIS Exam — Process Analysis</title>
+<style>
+  body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f6f8fb;color:#0f172a;}
+  header{background:#fff;padding:16px;display:flex;align-items:center;gap:12px;box-shadow:0 1px 6px rgba(0,0,0,.1);}
+  header h1{margin:0;font-size:1.2rem;} header .timer{margin-left:auto;padding:8px 12px;background:#ffe5e5;color:#b00020;font-weight:700;border-radius:50px;}
+  main{max-width:900px;margin:20px auto;padding:12px;}
+  .card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.05);margin-bottom:12px;}
+  label{display:block;margin:8px 0 4px;font-weight:600;}
+  select,input[type=text]{width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;}
+  button{background:#1f6feb;color:#fff;border:none;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer;}
+  button.secondary{background:#eef2ff;color:#1f6feb;}
+  .hidden{display:none!important;}
+  .muted{color:#6b7280;font-size:.9rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BSIS Exam — Process Analysis</h1>
+  <div class="timer" id="timer">40:00</div>
+</header>
+
+<main>
+  <section class="card">
+    <strong>Important:</strong> Do not minimize or switch apps. Leaving the exam will reset answers. Timer continues.
+  </section>
+
+  <form id="examForm" class="card" autocomplete="off">
+    <label>Student Name</label>
+    <input type="text" id="studentName" name="studentName">
+
+    <hr>
+
+    <!-- 20 Questions -->
+    <label>1. What is the main focus of Phase 3 — Process Analysis?</label>
+    <select name="q1">
+      <option value="">Select answer</option>
+      <option value="a">Designing new processes</option>
+      <option value="b">Identifying problems in the current process</option>
+      <option value="c">Monitoring KPI metrics</option>
+      <option value="d">Implementing IT systems</option>
+    </select>
+
+    <label>2. Define process analysis in 1–2 sentences.</label>
+    <input type="text" name="q2">
+
+    <label>3. Which tool is commonly used to identify root causes?</label>
+    <select name="q3">
+      <option value="">Select answer</option>
+      <option value="a">Fishbone Diagram</option>
+      <option value="b">Gantt Chart</option>
+      <option value="c">Pareto Chart</option>
+      <option value="d">PERT Chart</option>
+    </select>
+
+    <label>4. Name one type of analysis that is descriptive.</label>
+    <input type="text" name="q4">
+
+    <label>5. What does identifying bottlenecks help achieve?</label>
+    <select name="q5">
+      <option value="">Select answer</option>
+      <option value="a">Increase waste</option>
+      <option value="b">Reduce process efficiency</option>
+      <option value="c">Streamline processes and reduce delays</option>
+      <option value="d">Eliminate all decisions</option>
+    </select>
+
+    <label>6. Which is a visual tool for problem analysis?</label>
+    <select name="q6">
+      <option value="">Select answer</option>
+      <option value="a">Fishbone Diagram</option>
+      <option value="b">Spreadsheet</option>
+      <option value="c">Text Document</option>
+      <option value="d">Email</option>
+    </select>
+
+    <label>7. Give an example of a bottleneck.</label>
+    <input type="text" name="q7">
+
+    <label>8. Quantitative analysis primarily uses:</label>
+    <select name="q8">
+      <option value="">Select answer</option>
+      <option value="a">Descriptive observations</option>
+      <option value="b">Numerical data</option>
+      <option value="c">Opinions</option>
+      <option value="d">Text documents</option>
+    </select>
+
+    <label>9. Name one outcome of effective process analysis.</label>
+    <input type="text" name="q9">
+
+    <label>10. Key benefit of identifying inefficiencies?</label>
+    <select name="q10">
+      <option value="">Select answer</option>
+      <option value="a">Increased delays</option>
+      <option value="b">Optimized resource usage</option>
+      <option value="c">More errors</option>
+      <option value="d">Longer process cycles</option>
+    </select>
+
+    <label>11. Example of a resource in a process step:</label>
+    <input type="text" name="q11">
+
+    <label>12. Which diagram shows potential causes?</label>
+    <select name="q12">
+      <option value="">Select answer</option>
+      <option value="a">Fishbone Diagram</option>
+      <option value="b">Flowchart</option>
+      <option value="c">Pie Chart</option>
+      <option value="d">Histogram</option>
+    </select>
+
+    <label>13. Which indicates process inefficiency?</label>
+    <select name="q13">
+      <option value="">Select answer</option>
+      <option value="a">Repeated steps</option>
+      <option value="b">Decision points</option>
+      <option value="c">Waiting times</option>
+      <option value="d">All of the above</option>
+    </select>
+
+    <label>14. Name one qualitative analysis method.</label>
+    <input type="text" name="q14">
+
+    <label>15. Effective process analysis can lead to:</label>
+    <select name="q15">
+      <option value="">Select answer</option>
+      <option value="a">Improved efficiency and quality</option>
+      <option value="b">Increased costs</option>
+      <option value="c">Slower processes</option>
+      <option value="d">No improvement</option>
+    </select>
+
+    <label>16. Give an example of a decision point.</label>
+    <input type="text" name="q16">
+
+    <label>17. Which tool organizes potential causes visually?</label>
+    <select name="q17">
+      <option value="">Select answer</option>
+      <option value="a">Fishbone Diagram</option>
+      <option value="b">Calendar</option>
+      <option value="c">Text Editor</option>
+      <option value="d">Email</option>
+    </select>
+
+    <label>18. First step in process analysis?</label>
+    <select name="q18">
+      <option value="">Select answer</option>
+      <option value="a">Collect data about the current process</option>
+      <option value="b">Implement improvements</option>
+      <option value="c">Evaluate KPIs</option>
+      <option value="d">Train staff</option>
+    </select>
+
+    <label>19. Example of a real-life process for analysis:</label>
+    <input type="text" name="q19">
+
+    <label>20. Continuous improvement is achieved by:</label>
+    <select name="q20">
+      <option value="">Select answer</option>
+      <option value="a">Ignoring bottlenecks</option>
+      <option value="b">Periodic process analysis and optimization</option>
+      <option value="c">Doing tasks randomly</option>
+      <option value="d">Stopping evaluation</option>
+    </select>
+
+    <div style="margin-top:14px;display:flex;gap:8px;align-items:center">
+      <button type="submit" id="submitBtn">Submit Answers</button>
+      <button type="button" class="secondary" id="downloadBtn" disabled>Download Answers (.txt)</button>
+      <div style="margin-left:auto" class="muted">Auto-score enabled — Total = 20 pts</div>
+    </div>
+  </form>
+
+  <section id="result" class="card hidden">
+    <h3>✅ Answers Submitted</h3>
+    <p class="muted">Show this screen to your instructor or download the answers file.</p>
+    <p><strong>Student:</strong> <span id="resName"></span></p>
+    <p><strong>Time left:</strong> <span id="resTime"></span></p>
+    <p><strong>Auto-score:</strong> <span id="totalScore"></span> / 20</p>
+    <ul id="breakdown"></ul>
+    <pre id="savedAnswers"></pre>
+  </section>
+</main>
+
+<script>
+// ----------------- SCRIPT -----------------
+const DURATION_MINUTES=40;
+const form=document.getElementById('examForm');
+const timerEl=document.getElementById('timer');
+const result=document.getElementById('result');
+const resName=document.getElementById('resName');
+const resTime=document.getElementById('resTime');
+const totalScoreEl=document.getElementById('totalScore');
+const breakdownEl=document.getElementById('breakdown');
+const savedAnswers=document.getElementById('savedAnswers');
+const downloadBtn=document.getElementById('downloadBtn');
+
+let endTime=null;
+let timerInterval=null;
+
+// Correct answers (MCQs only)
+const correctAnswers={q1:'b',q3:'a',q5:'c',q6:'a',q8:'b',q10:'b',q12:'a',q13:'d',q15:'a',q17:'a',q18:'a',q20:'b'};
+
+// ---------- Start Button ----------
+form.classList.add('hidden');
+const startBtn=document.createElement('button');
+startBtn.textContent='Start Exam';
+startBtn.style.cssText='padding:10px 20px;border-radius:10px;border:none;font-weight:700;background:#1f6feb;color:#fff;margin:10px 0;cursor:pointer';
+form.parentNode.insertBefore(startBtn,form);
+
+startBtn.addEventListener('click',()=>{
+  startBtn.style.display='none';
+  form.classList.remove('hidden');
+  endTime=Date.now()+DURATION_MINUTES*60*1000;
+  function fmt(ms){const total=Math.max(0,Math.floor(ms/1000));const m=Math.floor(total/60);const s=total%60;return m+':' + (s<10?'0'+s:s);}
+  function updateTimer(){const remaining=endTime-Date.now();timerEl.textContent=fmt(remaining);if(remaining<=0){clearInterval(timerInterval);autoSubmit('Time is up');}}
+  timerInterval=setInterval(updateTimer,300); updateTimer();
+});
+
+// ---------- Auto-score ----------
+function autoScoreAndShow(data,reason){
+  let total=0;
+  let breakdown=[];
+  let output='== Process Analysis Exam ==\nStudent: '+(data.get('studentName')||'(no name)')+'\nReason: '+reason+'\n\n';
+  for(let i=1;i<=20;i++){
+    let key='q'+i;
+    let ans=data.get(key)||'';
+    output+='Q'+i+': '+ans+'\n';
+    let score=0;
+    if(correctAnswers[key]!==undefined){score=(ans.toLowerCase()===correctAnswers[key])?1:0;}
+    else{if(ans.trim().length>0) score=1;}
+    total+=score;
+    breakdown.push({k:'Q'+i,v:score+'/1'});
+  }
+  form.classList.add('hidden');
+  result.classList.remove('hidden');
+  resName.textContent=data.get('studentName')||'(no name)';
+  resTime.textContent=timerEl.textContent;
+  totalScoreEl.textContent=total+'/20';
+  breakdownEl.innerHTML='';breakdown.forEach(it=>{const li=document.createElement('li');li.textContent=it.k+': '+it.v;breakdownEl.appendChild(li);});
+  savedAnswers.textContent=output+'\nTOTAL SCORE: '+total+'/20';
+  downloadBtn.disabled=false;
+  clearInterval(timerInterval);
+  window.__paOutput=output;
+  // Allow reopening for 5 minutes
+  setTimeout(()=>{form.classList.remove('hidden');result.classList.add('hidden');},5*60*1000);
+}
+
+// ---------- Submit ----------
+form.addEventListener('submit',e=>{e.preventDefault();autoSubmit('Submitted by user');});
+function autoSubmit(reason){const data=new FormData(form);if(!data.get('studentName')) data.set('studentName','(no name)');autoScoreAndShow(data,reason);}
+
+// ---------- Download ----------
+downloadBtn.addEventListener('click',function(){
+  const blob=new Blob([window.__paOutput||savedAnswers.textContent],{type:'text/plain'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=(document.getElementById('studentName').value||'student')+'_process_analysis.txt';
+  document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(a.href);
+});
+
+// ---------- Anti-copy ----------
+['studentName','q1','q2','q3','q4','q5','q6','q7','q8','q9','q10','q11','q12','q13','q14','q15','q16','q17','q18','q19','q20'].forEach(name=>{
+  const el=document.getElementsByName(name)[0];
+  ['paste','copy','cut','contextmenu','selectstart'].forEach(ev=>el.addEventListener(ev,e=>e.preventDefault()));
+});
+document.addEventListener('contextmenu',e=>e.preventDefault());
+window.addEventListener('keydown',e=>{if(e.ctrlKey||e.metaKey){if(['c','v','x','s','u','p'].includes(e.key.toLowerCase())){e.preventDefault();return false;}}if(e.key==='F12'){e.preventDefault();return false;}});
+document.querySelectorAll('label,h1,h3,p').forEach(el=>el.style.userSelect='none');
+
+// ---------- Auto-reset on leave ----------
+let hasLeftExam=false;
+function resetExamOnLeave(){if(!hasLeftExam){hasLeftExam=true;form.reset();alert('You left the exam. All answers have been reset. Timer continues.');window.scrollTo({top:0,behavior:'instant'});}}
+document.addEventListener('visibilitychange',()=>{if(document.hidden) resetExamOnLeave();});
+window.addEventListener('blur',resetExamOnLeave);
+</script>
+
+</body>
+</html>
